@@ -4,7 +4,7 @@ require 'directors_database'
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
-
+puts pp directors_database
 def directors_totals(nds)
   result = {}
   nil
