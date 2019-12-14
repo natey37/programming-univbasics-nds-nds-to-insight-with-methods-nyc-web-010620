@@ -16,14 +16,5 @@ def gross_for_director(director_data)
   total = 0 
   row_index = 0
   
-  while row_index < director_data.count do 
-    column_index = 0 
-    while outer_index < nds[inner_index][:movies].count do 
-      directors_hash[director] += nds[inner_index][:movies][outer_index][:worldwide_gross]
-      outer_index += 1 
-    end 
-    inner_index += 1 
-  end 
-  puts directors_hash
-  directors_hash
+  w
 end
