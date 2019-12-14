@@ -14,7 +14,8 @@ end
 # using director_data as input
 def gross_for_director(director_data)
   total = 0 
-  row_index = 0
+  index = 0
   
-  w
+  while index < director_data[:movies].count do 
+    
 end
