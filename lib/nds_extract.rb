@@ -7,6 +7,10 @@ require 'directors_database'
 puts pp directors_database
 def directors_totals(nds)
   result = {}
+  index = 0 
+  while index < nds.count do 
+    director = nds[index][:name]
+    result[director] = gross_for_director()
   nil
 end
 
@@ -17,5 +21,8 @@ def gross_for_director(director_data)
   index = 0
   
   while index < director_data[:movies].count do 
-    total += director_data[:movies][index][worldwide_grosses]
+    total += director_data[:movies][index][:worldwide_gross]
+    index += 1 
+  end 
+    total 
 end
